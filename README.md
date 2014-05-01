@@ -15,3 +15,11 @@ This uses SASS files for separation of CSS into various SCSS files. They're comp
 - npm
 - grunt
 - compass
+
+## Building
+
+After installing the required dependencies, just type:
+
+`$ npm install`
+
+`$ grunt dev`
