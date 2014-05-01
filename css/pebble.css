@@ -1,0 +1,335 @@
+/* ------------------------------ 
+	Teampebble flair 
+------------------------------ */
+.flair-teampebble {
+	padding:2px;
+	background-color:blue;
+	color:white;
+	text-align:center;
+	border-radius: 5px;
+}
+
+/* ------------------------------ 
+	AlexX3's flair
+------------------------------ */
+.flair-alexfunston {
+	padding:2px;
+	background-color:pink;
+	color:black;
+	text-align:center;
+	border-radius: 5px;
+}
+
+/* ------------------------------ 
+	Thumbnails 
+------------------------------ */
+.thumbnail.default {
+	background-image:url(%%nothumbnail%%) !important;
+	background-repeat:no-repeat !important;
+	height:0 !important;
+	width:0 !important;
+	background-position:0px 0px;
+	padding:62px 0 0 63px !important
+}
+a.thumbnail[href^='/r/pebble/'] {
+	display:none;
+}
+a.thumbnail[href^='http://redd.it'],a.thumbnail[href^='http://reddit.com'],a.thumbnail[href^='http://www.reddit.com'] {
+	display: none;
+}
+/* ------------------------------ 
+	Replace 'readers' 
+------------------------------ */
+div.titlebox span.subscribers span.word {
+	display:none
+}
+div.titlebox span.subscribers span.number:after {
+	content:" pebblers"
+}
+div.titlebox p.users-online span.word {
+	display:none
+}
+div.titlebox p.users-online span.number:after {
+	content: " recent pebblers"
+}
+/* ------------------------------ 
+	Pebble flair 
+------------------------------ */
+.flairselector .customizer {
+	display:none !important;
+}
+.flair-pebble {
+	border:none !important;
+	padding:0px;
+	background:url(%%Flair2%%) no-repeat -9999px -9999px;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	margin-bottom:-4px;
+}
+.flair-pebble-red {
+	background-position:0 0;
+}
+.flair-pebble-black {
+	background-position:0 -16px;
+}
+.flair-pebble-white {
+	background-position:0 -32px;
+}
+.flair-pebble-orange {
+	background-position:0 -48px;
+}
+.flair-pebble-grey {
+	background-position:0 -64px;
+}
+.flair-pebble-steel-black {
+        background-position:0 -80px;
+}
+.flair-pebble-steel-silver {
+        background-position:0 -96px;
+}
+
+/*Curved box around Sidebar*/
+.titlebox {
+    padding: 10px;
+    background-color: #FFF;
+    border: 1px solid #AAA;
+    color: #000;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+}
+
+
+
+
+/*turns the lists into menus*/
+.titlebox blockquote ul {
+	float: right;
+	padding: 1px;
+	background: #eff7ff;
+	border: 1px solid #cee3f8;
+	margin:0px;
+}
+/*hide and styles lists*/
+.titlebox blockquote ul li {
+	display: none;
+	padding: 2px;
+	text-align:center;
+}
+ /*turns first paragraph into menu title*/
+.titlebox blockquote:first-child p:first-child {
+	margin-top: 42px;
+	padding: 5px;
+	float: left;
+	font-size: 1em;
+	background: #eff7ff;
+	border: 1px solid #cee3f8;
+	font-weight: bold;
+	color: #555;
+	cursor:default;
+}
+/*makes whole list item selectable*/
+.titlebox blockquote li a {
+	display:block;
+}
+/*shows menu on hover*/
+.titlebox blockquote ul li:first-child, .titlebox blockquote ul:hover li {
+	display: block
+}
+/*turns top list item into section header*/
+.titlebox blockquote li:first-child {
+	font-size: 1em;
+	padding: 4px;
+	cursor:default;
+	color: #555;
+}
+  
+/* announcements bar
+------------------------------ */
+
+/* Better post submit boxes. Small change but makes the subreddit feel more finished. */
+
+.sidebox.submit {
+width: 300px;
+}
+.sidebox.submit .morelink {
+  background: #FF4700;
+  border: 0;
+  border-radius: 5px;
+  padding: 2px 0px;
+}
+.sidebox.submit .morelink:hover {
+  background: #cc3900;
+}
+.sidebox.submit .morelink a {
+  color: #FFFFFF;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform:uppercase;
+  letter-spacing: 0px;
+
+}
+.sidebox.submit .morelink .nub {
+  display: none;
+}
+.sidebox.create {
+  display: none;
+}
+
+/* dividing bar under logo */
+#header {
+-moz-box-shadow: 0px 0px 10px #888;
+-webkit-box-shadow: 0px 0px 10px #888;
+box-shadow: 0px 0px 10px #888;
+margin:0px;
+padding:0;
+border-bottom:none;
+width:100%;
+z-index:100;
+}
+
+/* end logo bar*/
+
+/*new banner css*/
+
+#header {
+  background:url(%%pebble-banner%%) white center center no-repeat;
+  height: 100px;
+  position: relative;
+}
+#header-img-a {
+  height: 61px !important;
+  width: 49px !important;
+  background: url(%%Snoo%%) no-repeat !important;
+  position: absolute;
+  left: 9px;
+  bottom: 15px;
+}
+#header-img-a:hover {
+  background-position: -49px 0px !important;
+}
+#header-img {
+  display: none;
+  width: 0;
+  height: 0;
+}
+#header .tabmenu {
+  position: absolute;
+  bottom: 0;
+}
+#header-bottom-left .redditname {
+  text-indent:-999px;
+  color: white;
+}
+#header-bottom-left .redditname a {
+  background:url(%%pebble-logo%%) no-repeat !important;
+  display: block;
+  width: 206px !important;
+  height: 58px !important;
+  text-indent:-9999px;
+  position: absolute;
+  bottom: 15px;
+  left: 60px;
+}
+.side .redditname a {
+  background:url(%%pebble-logo%%) no-repeat !important;
+  display: block;
+  width: 206px !important;
+  height: 58px !important;
+  text-indent:-9999px;
+}
+
+/* user panel*/
+
+#header-bottom-right {
+    position: absolute;
+    bottom: 0;
+    height: 15px;
+    background-color: white;
+    -moz-border-radius-topleft: 7px;
+    -webkit-border-top-left-radius: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    -moz-border-radius-topright: 7px;
+    -webkit-border-top-right-radius: 7px;
+    border-left: 1px solid #676767;
+    border-top: 1px solid #676767;
+    border-right: 1px solid #676767
+    }
+
+/* tab buttons */
+#header .tabmenu li a { border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom: 0; background:url(%%white-50percent%%) repeat;}
+#header .tabmenu li a:hover { color: #FF4500; }
+#header .tabmenu li.selected a:hover {  background-color: #bbb; }
+
+
+/* Custom submit page hack */
+
+/* push submission area down so that submission guidelines show up on top */
+.submit-page .formtabs-content .spacer:nth-child(2) {
+  padding-top: 260px;
+}
+
+/* Move submission guidelines to the top */
+.submit-page .formtabs-content .spacer:nth-child(6) {
+  position: absolute;
+  top: 227px;
+}
+
+/* Fix link/text description height */
+
+.submit-page .formtabs-content #link-desc {
+  padding-bottom: 21px;
+}
+
+.submit_text {
+  max-height: none;
+}
+
+/* Retina Assets */
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+
+#header-img-a {
+  height: 61px !important;
+  width: 49px !important;
+  background: url(%%Snoo2x%%) no-repeat !important;
+  position: absolute;
+  left: 8px;
+  bottom: 15px;
+  background-size: 200% !important;
+}
+#header-img-a:hover {
+  background-position: -49px 0px !important;
+}
+#header-bottom-left .redditname a {
+  background:url(%%pebble-logo2x%%) no-repeat !important;
+  display: block;
+  width: 206px !important;
+  height: 58px !important;
+  text-indent:-9999px;
+  position: absolute;
+  bottom: 15px;
+  left: 60px;
+  background-size: 100% !important;
+}
+.side .redditname a {
+  background:url(%%pebble-logo2x%%) no-repeat !important;
+  display: block;
+  width: 206px !important;
+  height: 58px !important;
+  text-indent:-9999px;
+  background-size: 100% !important;
+}
+#header {
+  background:url(%%pebble-banner2x%%) white center center no-repeat;
+  background-size: 1182px 100px !important;
+  height: 100px;
+  position: relative;
+}
+
+}
