@@ -5,8 +5,13 @@ Custom Reddit CSS for the /r/pebble Subreddit
 
 Large portions by [@spangborn](https://github.com/spangborn/)
 
+# Usage
 
-**Todo**
-- Move CSS into separate files
-- Convert CSS to SCSS
-- Create grunt build for resulting CSS
+This uses SASS files for separation of CSS into various SCSS files. They're compiled using Compass. It's easier to use `grunt` to build the resultant CSS, but you'll need the following software packages:
+
+## Requirements
+
+- Node.js
+- npm
+- grunt
+- compass
