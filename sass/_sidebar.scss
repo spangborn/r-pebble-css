@@ -1,0 +1,105 @@
+/* ------------------------------ 
+	Replace 'readers' 
+------------------------------ */
+div.titlebox span.subscribers span.word {
+	display:none
+}
+div.titlebox span.subscribers span.number:after {
+	content:" pebblers"
+}
+div.titlebox p.users-online span.word {
+	display:none
+}
+div.titlebox p.users-online span.number:after {
+	content: " recent pebblers"
+}
+
+
+/*Curved box around Sidebar*/
+.titlebox {
+    padding: 10px;
+    background-color: #FFF;
+    border: 1px solid #AAA;
+    color: #000;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+}
+
+
+/*turns the lists into menus*/
+.titlebox blockquote ul {
+	float: right;
+	padding: 1px;
+	background: #eff7ff;
+	border: 1px solid #cee3f8;
+	margin:0px;
+}
+/*hide and styles lists*/
+.titlebox blockquote ul li {
+	display: none;
+	padding: 2px;
+	text-align:center;
+}
+ /*turns first paragraph into menu title*/
+.titlebox blockquote:first-child p:first-child {
+	margin-top: 42px;
+	padding: 5px;
+	float: left;
+	font-size: 1em;
+	background: #eff7ff;
+	border: 1px solid #cee3f8;
+	font-weight: bold;
+	color: #555;
+	cursor:default;
+}
+/*makes whole list item selectable*/
+.titlebox blockquote li a {
+	display:block;
+}
+/*shows menu on hover*/
+.titlebox blockquote ul li:first-child, .titlebox blockquote ul:hover li {
+	display: block
+}
+/*turns top list item into section header*/
+.titlebox blockquote li:first-child {
+	font-size: 1em;
+	padding: 4px;
+	cursor:default;
+	color: #555;
+}
+  
+/* announcements bar
+------------------------------ */
+
+/* Better post submit boxes. Small change but makes the subreddit feel more finished. */
+
+.sidebox.submit {
+  width: 300px;
+}
+.sidebox.submit .morelink {
+  background: #FF4700;
+  border: 0;
+  border-radius: 5px;
+  padding: 2px 0px;
+}
+.sidebox.submit .morelink:hover {
+  background: #cc3900;
+}
+.sidebox.submit .morelink a {
+  color: #FFFFFF;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform:uppercase;
+  letter-spacing: 0px;
+
+}
+.sidebox.submit .morelink .nub {
+  display: none;
+}
+.sidebox.create {
+  display: none;
+}
+
+

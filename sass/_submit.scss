@@ -1,0 +1,22 @@
+/* Submit Page */
+
+/* push submission area down so that submission guidelines show up on top */
+.submit-page .formtabs-content .spacer:nth-child(2) {
+    padding-top: 260px;
+}
+
+/* Move submission guidelines to the top */
+.submit-page .formtabs-content .spacer:nth-child(6) {
+    position: absolute;
+    top: 227px;
+}
+
+/* Fix link/text description height */
+
+.submit-page .formtabs-content #link-desc {
+    padding-bottom: 21px;
+}
+
+.submit_text {
+    max-height: none;
+}

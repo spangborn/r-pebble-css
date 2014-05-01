@@ -1,0 +1,68 @@
+/* Flair */
+
+/* ------------------------------ 
+	Teampebble flair 
+------------------------------ */
+.flair-teampebble {
+    padding: 2px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* ------------------------------ 
+	AlexX3's flair
+------------------------------ */
+.flair-alexfunston {
+    padding: 2px;
+    background-color: pink;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* ------------------------------ 
+	Pebble flair 
+------------------------------ */
+.flairselector .customizer {
+    display: none !important;
+}
+
+.flair-pebble {
+    border: none !important;
+    padding: 0px;
+    background: url(%%Flair2%%) no-repeat -9999px -9999px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-bottom: -4px;
+}
+
+.flair-pebble-red {
+    background-position: 0 0;
+}
+
+.flair-pebble-black {
+    background-position: 0 -16px;
+}
+
+.flair-pebble-white {
+    background-position: 0 -32px;
+}
+
+.flair-pebble-orange {
+    background-position: 0 -48px;
+}
+
+.flair-pebble-grey {
+    background-position: 0 -64px;
+}
+
+.flair-pebble-steel-black {
+    background-position: 0 -80px;
+}
+
+.flair-pebble-steel-silver {
+    background-position: 0 -96px;
+}

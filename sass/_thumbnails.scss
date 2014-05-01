@@ -1,0 +1,17 @@
+/* ------------------------------ 
+	Thumbnails 
+------------------------------ */
+.thumbnail.default {
+	background-image:url(%%nothumbnail%%) !important;
+	background-repeat:no-repeat !important;
+	height:0 !important;
+	width:0 !important;
+	background-position:0px 0px;
+	padding:62px 0 0 63px !important
+}
+a.thumbnail[href^='/r/pebble/'] {
+	display:none;
+}
+a.thumbnail[href^='http://redd.it'],a.thumbnail[href^='http://reddit.com'],a.thumbnail[href^='http://www.reddit.com'] {
+	display: none;
+}

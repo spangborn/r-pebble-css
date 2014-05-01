@@ -1,0 +1,41 @@
+/* Retina Assets */
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    #header-img-a {
+        height: $pebbleSnooHeight !important;
+        width: $pebbleSnooWidth !important;
+        background: url(%%Snoo2x%%) no-repeat !important;
+        position: absolute;
+        left: 8px;
+        bottom: 15px;
+        background-size: 200% !important;
+    }
+    #header-img-a:hover {
+        background-position: -$pebbleSnooWidth 0px !important;
+    }
+    #header-bottom-left .redditname a {
+        background: url(%%pebble-logo2x%%) no-repeat !important;
+        display: block;
+        height: $pebbleLogoHeight !important;
+        width: $pebbleLogoWidth !important;
+        text-indent: -9999px;
+        position: absolute;
+        bottom: 15px;
+        left: 60px;
+        background-size: 100% !important;
+    }
+    .side .redditname a {
+        background: url(%%pebble-logo2x%%) no-repeat !important;
+        display: block;
+        height: $pebbleLogoHeight !important;
+        width: $pebbleLogoWidth !important;
+        text-indent: -9999px;
+        background-size: 100% !important;
+    }
+    #header {
+        background: url(%%pebble-banner2x%%) white center center no-repeat;
+        background-size: $pebbleBannerWidth $pebbleBannerHeight !important;
+        height: $pebbleBannerHeight;
+        position: relative;
+    }
+}
