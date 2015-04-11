@@ -1,8 +1,8 @@
 /*
 	Package:rPebble-CSS
 	Version: 0.0.1
-	Build: prod
-	Built: 2014-05-01 2:12:28 PM MDT 
+	Build: dev
+	Built: 2015-04-11 1:26:36 PM MDT 
 */
 
 /* Variables */
@@ -13,7 +13,7 @@
 /*new banner css*/
 /* line 5, ../sass/_header.scss */
 #header {
-  background: url(%%pebble-banner%%) white center center no-repeat;
+  background: url(%%pebble-banner%%) white center 12px no-repeat;
   height: 100px;
   position: relative;
   -moz-box-shadow: 0px 0px 10px #888;
@@ -164,6 +164,7 @@
   #header {
     background: url(%%pebble-banner2x%%) white center center no-repeat;
     background-size: 1182px 100px !important;
+    background-position: center 12px;
     height: 100px;
     position: relative;
   }
@@ -194,82 +195,328 @@
 }
 
 /* Flair */
-/* ------------------------------ 
-	Teampebble flair 
------------------------------- */
-/* line 6, ../sass/_flair.scss */
-.flair-teampebble {
-  padding: 2px;
-  background-color: blue;
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-}
-
-/* ------------------------------ 
-	AlexX3's flair
------------------------------- */
-/* line 17, ../sass/_flair.scss */
-.flair-alexfunston {
-  padding: 2px;
-  background-color: pink;
-  color: black;
-  text-align: center;
-  border-radius: 5px;
-}
-
-/* ------------------------------ 
-	Pebble flair 
------------------------------- */
-/* line 28, ../sass/_flair.scss */
-.flairselector .customizer {
-  display: none !important;
-}
-
-/* line 32, ../sass/_flair.scss */
-.flair-pebble {
-  border: none !important;
-  padding: 0px;
-  background: url(%%Flair2%%) no-repeat -9999px -9999px;
+/* Default Flair */
+/* line 5, ../sass/_flair.scss */
+.flair {
+  background: url(%%newflair%%) -9999px -9999px;
+  background-repeat: no-repeat;
+  padding: 0;
+  min-width: 23px;
+  max-width: 23px;
+  height: 27px;
+  overflow: hidden;
+  text-indent: 34px;
+  font-size: 10px;
+  line-height: 30px;
+  vertical-align: middle;
   display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-bottom: -4px;
+  border: none !important;
+  transition: hover 0.3s ease-out;
+  transition-delay: 0.15s;
+  position: relative;
+  color: transparent !important;
+  transform: scale(0.8);
 }
 
-/* line 42, ../sass/_flair.scss */
-.flair-pebble-red {
+/* Show title for hover */
+/* line 27, ../sass/_flair.scss */
+.flair[title]:after {
+  content: attr(title);
+  position: absolute;
+  color: #F4FAFF;
+  font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+  top: 0px;
+  left: -10px;
+  background: white;
+  box-shadow: 0px 1px 10px white;
+  padding: 0px 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+  visibility: hidden;
+  pointer-events: none;
+  text-indent: 0px;
+  border-bottom-left-radius: 18px;
+  border-top-left-radius: 18px;
+  transform: scale(0.8, 0.4);
+  z-index: 9999;
+  font-size: 180%;
+}
+
+/* line 48, ../sass/_flair.scss */
+.flair[title]:before {
+  bottom: 7px;
+  left: 30px !important;
+  box-shadow: 0px 0px 0px transparent !important;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-right-color: rgba(255, 255, 255, 0);
+  border-width: 8px;
+  margin-left: -10px;
+  background-color: transparent !important;
+  z-index: 9999;
+}
+
+/* line 63, ../sass/_flair.scss */
+.flair[title]:hover:before, .flair[title]:hover:after, .flair[title]:active:before, .flair[title]:active:after {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  background: #FF4700;
+  border-right-color: #FF4700;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  box-shadow: 0px 1px 0px rgba(46, 46, 44, 0.5);
+  left: 35px;
+  transition: all 0.3s cubic-bezier(0.1, 0.235, 0.215, 1.195) 0.05s, background-color 0.45s cubic-bezier(0.1, 0.235, 0.215, 1.195) 0.1s, border-right-color 0.45s cubic-bezier(0.1, 0.235, 0.215, 1.195) 0.1s;
+}
+
+/* line 75, ../sass/_flair.scss */
+.flair[title=""]:hover:before {
+  border-right-color: transparent;
+}
+
+/* line 76, ../sass/_flair.scss */
+.flair:hover {
+  overflow: visible;
+  color: transparent;
+  background-position-x: -23px !important;
+  transition: none;
+}
+
+/* Flair Selection */
+/* line 85, ../sass/_flair.scss */
+.flairoptionpane .flair {
+  background-position-x: -23px;
+}
+
+/* line 88, ../sass/_flair.scss */
+.flairselector ul {
+  overflow: visible;
+  width: 35px !important;
+}
+
+/* line 92, ../sass/_flair.scss */
+.flairoptionpane a.author {
+  display: none;
+}
+
+/* line 95, ../sass/_flair.scss */
+.flairselector li {
+  width: 23px !important;
+  float: left;
+  border: none !important;
+  padding: 1px;
+}
+
+/* line 101, ../sass/_flair.scss */
+.flairoptionpane {
+  max-height: none;
+}
+
+/* line 104, ../sass/_flair.scss */
+.flairselector form button {
+  margin-left: -52px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+/* line 109, ../sass/_flair.scss */
+.flairselector .customizer {
+  float: none !important;
+}
+
+/* line 112, ../sass/_flair.scss */
+.customizer.texteditable {
+  text-align: center;
+  margin: auto auto;
+  width: 186px;
+}
+
+/* line 117, ../sass/_flair.scss */
+.flairselector .customizer input {
+  margin-top: 5px;
+}
+
+/* line 120, ../sass/_flair.scss */
+.flairoptionpane {
+  background: url(%%pixelsun%%) no-repeat;
+  background-size: cover;
+}
+
+/* line 124, ../sass/_flair.scss */
+.flairselector h2 {
+  background: white;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* ---------- Flair colors ---------- */
+/* line 132, ../sass/_flair.scss */
+.flair-pebble-black {
   background-position: 0 0;
 }
 
-/* line 46, ../sass/_flair.scss */
-.flair-pebble-black {
-  background-position: 0 -16px;
+/* line 133, ../sass/_flair.scss */
+.flair-pebble-black-ks {
+  background-position: 0 -27px;
 }
 
-/* line 50, ../sass/_flair.scss */
+/* line 134, ../sass/_flair.scss */
 .flair-pebble-white {
-  background-position: 0 -32px;
+  background-position: 0 -54px;
 }
 
-/* line 54, ../sass/_flair.scss */
+/* line 135, ../sass/_flair.scss */
+.flair-pebble-white-ks {
+  background-position: 0 -81px;
+}
+
+/* line 136, ../sass/_flair.scss */
+.flair-pebble-red {
+  background-position: 0 -108px;
+}
+
+/* line 137, ../sass/_flair.scss */
+.flair-pebble-red-ks {
+  background-position: 0 -135px;
+}
+
+/* line 138, ../sass/_flair.scss */
 .flair-pebble-orange {
-  background-position: 0 -48px;
+  background-position: 0 -162px;
 }
 
-/* line 58, ../sass/_flair.scss */
-.flair-pebble-grey {
-  background-position: 0 -64px;
+/* line 139, ../sass/_flair.scss */
+.flair-pebble-orange-ks {
+  background-position: 0 -189px;
 }
 
-/* line 62, ../sass/_flair.scss */
+/* line 140, ../sass/_flair.scss */
+.flair-pebble-gray {
+  background-position: 0 -216px;
+}
+
+/* line 141, ../sass/_flair.scss */
+.flair-pebble-gray-ks {
+  background-position: 0 -243px;
+}
+
+/* line 142, ../sass/_flair.scss */
+.flair-pebble-hot {
+  background-position: 0 -270px;
+}
+
+/* line 143, ../sass/_flair.scss */
+.flair-pebble-fly {
+  background-position: 0 -297px;
+}
+
+/* line 144, ../sass/_flair.scss */
+.flair-pebble-fresh {
+  background-position: 0 -324px;
+}
+
+/* line 145, ../sass/_flair.scss */
 .flair-pebble-steel-black {
-  background-position: 0 -80px;
+  background-position: 0 -351px;
 }
 
-/* line 66, ../sass/_flair.scss */
-.flair-pebble-steel-silver {
-  background-position: 0 -96px;
+/* line 146, ../sass/_flair.scss */
+.flair-pebble-steel-stainless {
+  background-position: 0 -378px;
+}
+
+/* line 147, ../sass/_flair.scss */
+.flair-pebble-time-black {
+  background-position: 0 -405px;
+}
+
+/* line 148, ../sass/_flair.scss */
+.flair-pebble-time-black-ks {
+  background-position: 0 -432px;
+}
+
+/* line 149, ../sass/_flair.scss */
+.flair-pebble-time-red {
+  background-position: 0 -459px;
+}
+
+/* line 150, ../sass/_flair.scss */
+.flair-pebble-time-red-ks {
+  background-position: 0 -486px;
+}
+
+/* line 151, ../sass/_flair.scss */
+.flair-pebble-time-white {
+  background-position: 0 -513px;
+}
+
+/* line 152, ../sass/_flair.scss */
+.flair-pebble-time-white-ks {
+  background-position: 0 -540px;
+}
+
+/* line 153, ../sass/_flair.scss */
+.flair-pebble-time-steel-black {
+  background-position: 0 -567px;
+}
+
+/* line 154, ../sass/_flair.scss */
+.flair-pebble-time-steel-black-ks {
+  background-position: 0 -594px;
+}
+
+/* line 155, ../sass/_flair.scss */
+.flair-pebble-time-steel-silver {
+  background-position: 0 -621px;
+}
+
+/* line 156, ../sass/_flair.scss */
+.flair-pebble-time-steel-silver-ks {
+  background-position: 0 -648px;
+}
+
+/* line 157, ../sass/_flair.scss */
+.flair-pebble-time-steel-gold {
+  background-position: 0 -675px;
+}
+
+/* line 158, ../sass/_flair.scss */
+.flair-pebble-time-steel-gold-ks {
+  background-position: 0 -702px;
+}
+
+/* ------------------------------
+     Pebble flair
+------------------------------ */
+/* line 164, ../sass/_flair.scss */
+.flairselector {
+  width: 350px !important;
+}
+
+/* line 167, ../sass/_flair.scss */
+.flairselector .customizer {
+  /*display:none important;*/
+  float: left;
+  display: block;
+  clear: both;
+}
+
+/* line 173, ../sass/_flair.scss */
+.flairselector .customizer:before {
+  content: "Enter your OS/Platform: (iOS/Android)";
+  display: block;
+  text-align: left;
+}
+
+/* line 178, ../sass/_flair.scss */
+.flairselector button {
+  display: block;
+  clear: both;
+  text-align: left;
 }
 
 /* ------------------------------ 
