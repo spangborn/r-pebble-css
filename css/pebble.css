@@ -2,7 +2,7 @@
 	Package:rPebble-CSS
 	Version: 0.0.1
 	Build: dev
-	Built: 2015-04-11 1:26:36 PM MDT 
+	Built: 2015-04-11 1:33:46 PM MDT 
 */
 
 /* Variables */
@@ -215,7 +215,7 @@
   transition-delay: 0.15s;
   position: relative;
   color: transparent !important;
-  transform: scale(0.8);
+  /*transform: scale(0.5);*/
 }
 
 /* Show title for hover */
@@ -239,7 +239,7 @@
   border-top-left-radius: 18px;
   transform: scale(0.8, 0.4);
   z-index: 9999;
-  font-size: 180%;
+  font-size: 150%;
 }
 
 /* line 48, ../sass/_flair.scss */
@@ -519,8 +519,8 @@
   text-align: left;
 }
 
-/* ------------------------------ 
-	Replace 'readers' 
+/* ------------------------------
+	Replace 'readers'
 ------------------------------ */
 /* line 4, ../sass/_sidebar.scss */
 div.titlebox span.subscribers span.word {
@@ -616,36 +616,57 @@ div.titlebox p.users-online span.number:after {
 }
 
 /* line 80, ../sass/_sidebar.scss */
-.sidebox.submit .morelink {
-  background: #FF4700;
-  border: 0;
-  border-radius: 5px;
-  padding: 2px 0px;
+.morelink {
+  background-image: none;
 }
 
-/* line 86, ../sass/_sidebar.scss */
-.sidebox.submit .morelink:hover {
-  background: #cc3900;
+/* line 83, ../sass/_sidebar.scss */
+.sidebox.submit .morelink {
+  border: 0;
+  border-radius: 5px;
+  padding: 0px 0px;
+  height: 36px;
 }
 
 /* line 89, ../sass/_sidebar.scss */
-.sidebox.submit .morelink a {
-  color: #FFFFFF;
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0px;
+.sidebox.submit .morelink:hover {
+  background: none;
+  border: none;
 }
 
-/* line 98, ../sass/_sidebar.scss */
+/* line 93, ../sass/_sidebar.scss */
+.sidebox.submit .morelink a {
+  font-size: 0px;
+}
+
+/* line 96, ../sass/_sidebar.scss */
 .sidebox.submit .morelink .nub {
   display: none;
 }
 
-/* line 101, ../sass/_sidebar.scss */
+/* line 99, ../sass/_sidebar.scss */
 .sidebox.create {
   display: none;
+}
+
+/* line 102, ../sass/_sidebar.scss */
+.sidebox.submit.submit-link .morelink a {
+  background: url(%%SubmitLink%%) no-repeat;
+}
+
+/* line 105, ../sass/_sidebar.scss */
+.sidebox.submit.submit-link .morelink a:hover {
+  background: url(%%SubmitLinkRoll%%) no-repeat;
+}
+
+/* line 108, ../sass/_sidebar.scss */
+.sidebox.submit.submit-text .morelink a {
+  background: url(%%SubmitText%%) no-repeat;
+}
+
+/* line 111, ../sass/_sidebar.scss */
+.sidebox.submit.submit-text .morelink a:hover {
+  background: url(%%SubmitTextRoll%%) no-repeat;
 }
 
 /* ------------------------------ 
