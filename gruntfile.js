@@ -25,6 +25,7 @@ module.exports = function(grunt) {
                     sassDir: ['sass'],
                     cssDir: ['css'],
                     debugInfo: false,
+                    noLineComments: true,
                     specify: "sass/*.{scss,sass}",
                     banner: '/*\n\tPackage:<%= pkg.name %>\n\tVersion: <%=pkg.version%>\n\tBuild: <%= grunt.task.current.target %>\n\tBuilt: <%= grunt.template.today("yyyy-mm-dd h:MM:ss TT Z") %> \n*/\n',
                 },

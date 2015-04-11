@@ -1,8 +1,8 @@
 /*
 	Package:rPebble-CSS
 	Version: 0.0.1
-	Build: dev
-	Built: 2015-04-11 1:59:43 PM MDT 
+	Build: prod
+	Built: 2015-04-11 2:15:08 PM MDT 
 */
 
 /* Variables */
@@ -11,7 +11,6 @@
 /* Pebble Banner */
 /* Header */
 /*new banner css*/
-/* line 5, ../sass/_header.scss */
 #header {
   background: url(%%pebble-banner%%) white center 12px no-repeat;
   height: 100px;
@@ -27,7 +26,6 @@
 }
 
 /* end logo bar*/
-/* line 21, ../sass/_header.scss */
 #header-img-a {
   height: 61px !important;
   width: 49px !important;
@@ -37,31 +35,26 @@
   bottom: 15px;
 }
 
-/* line 30, ../sass/_header.scss */
 #header-img-a:hover {
   background-position: -49px 0px !important;
 }
 
-/* line 34, ../sass/_header.scss */
 #header-img {
   display: none;
   width: 0;
   height: 0;
 }
 
-/* line 40, ../sass/_header.scss */
 #header .tabmenu {
   position: absolute;
   bottom: 0;
 }
 
-/* line 45, ../sass/_header.scss */
 #header-bottom-left .redditname {
   text-indent: -999px;
   color: white;
 }
 
-/* line 50, ../sass/_header.scss */
 #header-bottom-left .redditname a {
   background: url(%%pebble-logo%%) no-repeat !important;
   display: block;
@@ -73,7 +66,6 @@
   left: 60px;
 }
 
-/* line 61, ../sass/_header.scss */
 .side .redditname a {
   background: url(%%pebble-logo%%) no-repeat !important;
   display: block;
@@ -83,7 +75,6 @@
 }
 
 /* user panel*/
-/* line 71, ../sass/_header.scss */
 #header-bottom-right {
   position: absolute;
   bottom: 0;
@@ -101,7 +92,6 @@
 }
 
 /* tab buttons */
-/* line 88, ../sass/_header.scss */
 #header .tabmenu li a {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -109,19 +99,16 @@
   background: url(%%white-50percent%%) repeat;
 }
 
-/* line 95, ../sass/_header.scss */
 #header .tabmenu li a:hover {
   color: #FF4500;
 }
 
-/* line 99, ../sass/_header.scss */
 #header .tabmenu li.selected a:hover {
   background-color: #bbb;
 }
 
 /* Retina Assets */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 4, ../sass/_retina.scss */
   #header-img-a {
     height: 61px !important;
     width: 49px !important;
@@ -132,12 +119,10 @@
     background-size: 200% !important;
   }
 
-  /* line 13, ../sass/_retina.scss */
   #header-img-a:hover {
     background-position: -49px 0px !important;
   }
 
-  /* line 16, ../sass/_retina.scss */
   #header-bottom-left .redditname a {
     background: url(%%pebble-logo2x%%) no-repeat !important;
     display: block;
@@ -150,7 +135,6 @@
     background-size: 100% !important;
   }
 
-  /* line 27, ../sass/_retina.scss */
   .side .redditname a {
     background: url(%%pebble-logo2x%%) no-repeat !important;
     display: block;
@@ -160,7 +144,6 @@
     background-size: 100% !important;
   }
 
-  /* line 35, ../sass/_retina.scss */
   #header {
     background: url(%%pebble-banner2x%%) white center center no-repeat;
     background-size: 1182px 100px !important;
@@ -171,25 +154,21 @@
 }
 /* Submit Page */
 /* push submission area down so that submission guidelines show up on top */
-/* line 4, ../sass/_submit.scss */
 .submit-page .formtabs-content .spacer:nth-child(2) {
   padding-top: 260px;
 }
 
 /* Move submission guidelines to the top */
-/* line 9, ../sass/_submit.scss */
 .submit-page .formtabs-content .spacer:nth-child(6) {
   position: absolute;
   top: 227px;
 }
 
 /* Fix link/text description height */
-/* line 16, ../sass/_submit.scss */
 .submit-page .formtabs-content #link-desc {
   padding-bottom: 21px;
 }
 
-/* line 20, ../sass/_submit.scss */
 .submit_text {
   max-height: none;
 }
@@ -198,7 +177,6 @@
 /* ------------------------------
 	Teampebble flair
 ------------------------------ */
-/* line 5, ../sass/_flair.scss */
 .flair-teampebble {
   padding: 2px;
   color: white;
@@ -210,18 +188,15 @@
   background-size: 100% !important;
 }
 
-/* line 15, ../sass/_flair.scss */
 .flair-teampebble:after {
   left: 75px !important;
 }
 
-/* line 18, ../sass/_flair.scss */
 .flair-teampebble[title]:hover:before {
   left: 69px !important;
 }
 
 /* Default Flair */
-/* line 24, ../sass/_flair.scss */
 .flair {
   background: url(%%newflair%%) -9999px -9999px;
   background-repeat: no-repeat;
@@ -244,7 +219,6 @@
 }
 
 /* Show title for hover */
-/* line 46, ../sass/_flair.scss */
 .flair[title]:after {
   content: attr(title);
   position: absolute;
@@ -267,7 +241,6 @@
   font-size: 150%;
 }
 
-/* line 67, ../sass/_flair.scss */
 .flair[title]:before {
   bottom: 7px;
   left: 30px !important;
@@ -284,7 +257,6 @@
   z-index: 9999;
 }
 
-/* line 82, ../sass/_flair.scss */
 .flair[title]:hover:before, .flair[title]:hover:after, .flair[title]:active:before, .flair[title]:active:after {
   visibility: visible;
   opacity: 1;
@@ -298,12 +270,10 @@
   /*transition: all 0.3s cubic-bezier(0.1, 0.235, 0.215, 1.195) 0.05s, background-color 0.45s cubic-bezier(0.1, 0.235, 0.215, 1.195) 0.1s, border-right-color 0.45s cubic-bezier(0.1, 0.235, 0.215, 1.195) 0.1s;*/
 }
 
-/* line 94, ../sass/_flair.scss */
 .flair[title=""]:hover:before {
   border-right-color: transparent;
 }
 
-/* line 95, ../sass/_flair.scss */
 .flair:hover {
   overflow: visible;
   color: transparent;
@@ -312,23 +282,19 @@
 }
 
 /* Flair Selection */
-/* line 104, ../sass/_flair.scss */
 .flairoptionpane .flair {
   background-position-x: -23px;
 }
 
-/* line 107, ../sass/_flair.scss */
 .flairselector ul {
   overflow: visible;
   width: 35px !important;
 }
 
-/* line 111, ../sass/_flair.scss */
 .flairoptionpane a.author {
   display: none;
 }
 
-/* line 114, ../sass/_flair.scss */
 .flairselector li {
   width: 23px !important;
   float: left;
@@ -336,42 +302,35 @@
   padding: 1px;
 }
 
-/* line 120, ../sass/_flair.scss */
 .flairoptionpane {
   max-height: none;
 }
 
-/* line 123, ../sass/_flair.scss */
 .flairselector form button {
   margin-left: -52px;
   margin-top: 5px;
   display: inline-block;
 }
 
-/* line 128, ../sass/_flair.scss */
 .flairselector .customizer {
   float: none !important;
 }
 
-/* line 131, ../sass/_flair.scss */
 .customizer.texteditable {
   text-align: center;
   margin: auto auto;
   width: 186px;
 }
 
-/* line 136, ../sass/_flair.scss */
 .flairselector .customizer input {
   margin-top: 5px;
 }
 
-/* line 139, ../sass/_flair.scss */
 .flairoptionpane {
   background: url(%%pixelsun%%) no-repeat;
   background-size: cover;
 }
 
-/* line 143, ../sass/_flair.scss */
 .flairselector h2 {
   background: white;
   font-size: 18px;
@@ -379,137 +338,110 @@
 }
 
 /* ---------- Flair colors ---------- */
-/* line 151, ../sass/_flair.scss */
 .flair-pebble-black {
   background-position: 0 0;
 }
 
-/* line 152, ../sass/_flair.scss */
 .flair-pebble-black-ks {
   background-position: 0 -27px;
 }
 
-/* line 153, ../sass/_flair.scss */
 .flair-pebble-white {
   background-position: 0 -54px;
 }
 
-/* line 154, ../sass/_flair.scss */
 .flair-pebble-white-ks {
   background-position: 0 -81px;
 }
 
-/* line 155, ../sass/_flair.scss */
 .flair-pebble-red {
   background-position: 0 -108px;
 }
 
-/* line 156, ../sass/_flair.scss */
 .flair-pebble-red-ks {
   background-position: 0 -135px;
 }
 
-/* line 157, ../sass/_flair.scss */
 .flair-pebble-orange {
   background-position: 0 -162px;
 }
 
-/* line 158, ../sass/_flair.scss */
 .flair-pebble-orange-ks {
   background-position: 0 -189px;
 }
 
-/* line 159, ../sass/_flair.scss */
 .flair-pebble-gray {
   background-position: 0 -216px;
 }
 
-/* line 160, ../sass/_flair.scss */
 .flair-pebble-gray-ks {
   background-position: 0 -243px;
 }
 
-/* line 161, ../sass/_flair.scss */
 .flair-pebble-hot {
   background-position: 0 -270px;
 }
 
-/* line 162, ../sass/_flair.scss */
 .flair-pebble-fly {
   background-position: 0 -297px;
 }
 
-/* line 163, ../sass/_flair.scss */
 .flair-pebble-fresh {
   background-position: 0 -324px;
 }
 
-/* line 164, ../sass/_flair.scss */
 .flair-pebble-steel-black {
   background-position: 0 -351px;
 }
 
-/* line 165, ../sass/_flair.scss */
 .flair-pebble-steel-stainless {
   background-position: 0 -378px;
 }
 
-/* line 166, ../sass/_flair.scss */
 .flair-pebble-time-black {
   background-position: 0 -405px;
 }
 
-/* line 167, ../sass/_flair.scss */
 .flair-pebble-time-black-ks {
   background-position: 0 -432px;
 }
 
-/* line 168, ../sass/_flair.scss */
 .flair-pebble-time-red {
   background-position: 0 -459px;
 }
 
-/* line 169, ../sass/_flair.scss */
 .flair-pebble-time-red-ks {
   background-position: 0 -486px;
 }
 
-/* line 170, ../sass/_flair.scss */
 .flair-pebble-time-white {
   background-position: 0 -513px;
 }
 
-/* line 171, ../sass/_flair.scss */
 .flair-pebble-time-white-ks {
   background-position: 0 -540px;
 }
 
-/* line 172, ../sass/_flair.scss */
 .flair-pebble-time-steel-black {
   background-position: 0 -567px;
 }
 
-/* line 173, ../sass/_flair.scss */
 .flair-pebble-time-steel-black-ks {
   background-position: 0 -594px;
 }
 
-/* line 174, ../sass/_flair.scss */
 .flair-pebble-time-steel-silver {
   background-position: 0 -621px;
 }
 
-/* line 175, ../sass/_flair.scss */
 .flair-pebble-time-steel-silver-ks {
   background-position: 0 -648px;
 }
 
-/* line 176, ../sass/_flair.scss */
 .flair-pebble-time-steel-gold {
   background-position: 0 -675px;
 }
 
-/* line 177, ../sass/_flair.scss */
 .flair-pebble-time-steel-gold-ks {
   background-position: 0 -702px;
 }
@@ -517,12 +449,10 @@
 /* ------------------------------
      Pebble flair
 ------------------------------ */
-/* line 183, ../sass/_flair.scss */
 .flairselector {
   width: 350px !important;
 }
 
-/* line 186, ../sass/_flair.scss */
 .flairselector .customizer {
   /*display:none important;*/
   float: left;
@@ -530,14 +460,12 @@
   clear: both;
 }
 
-/* line 192, ../sass/_flair.scss */
 .flairselector .customizer:before {
   content: "Enter your OS/Platform: (iOS/Android)";
   display: block;
   text-align: left;
 }
 
-/* line 197, ../sass/_flair.scss */
 .flairselector button {
   display: block;
   clear: both;
@@ -547,28 +475,23 @@
 /* ------------------------------
 	Replace 'readers'
 ------------------------------ */
-/* line 4, ../sass/_sidebar.scss */
 div.titlebox span.subscribers span.word {
   display: none;
 }
 
-/* line 7, ../sass/_sidebar.scss */
 div.titlebox span.subscribers span.number:after {
   content: " pebblers";
 }
 
-/* line 10, ../sass/_sidebar.scss */
 div.titlebox p.users-online span.word {
   display: none;
 }
 
-/* line 13, ../sass/_sidebar.scss */
 div.titlebox p.users-online span.number:after {
   content: " recent pebblers";
 }
 
 /*Curved box around Sidebar*/
-/* line 19, ../sass/_sidebar.scss */
 .titlebox {
   padding: 10px;
   background-color: #FFF;
@@ -580,7 +503,6 @@ div.titlebox p.users-online span.number:after {
 }
 
 /*turns the lists into menus*/
-/* line 31, ../sass/_sidebar.scss */
 .titlebox blockquote ul {
   float: right;
   padding: 1px;
@@ -590,7 +512,6 @@ div.titlebox p.users-online span.number:after {
 }
 
 /*hide and styles lists*/
-/* line 39, ../sass/_sidebar.scss */
 .titlebox blockquote ul li {
   display: none;
   padding: 2px;
@@ -598,7 +519,6 @@ div.titlebox p.users-online span.number:after {
 }
 
 /*turns first paragraph into menu title*/
-/* line 45, ../sass/_sidebar.scss */
 .titlebox blockquote:first-child p:first-child {
   margin-top: 42px;
   padding: 5px;
@@ -612,19 +532,16 @@ div.titlebox p.users-online span.number:after {
 }
 
 /*makes whole list item selectable*/
-/* line 57, ../sass/_sidebar.scss */
 .titlebox blockquote li a {
   display: block;
 }
 
 /*shows menu on hover*/
-/* line 61, ../sass/_sidebar.scss */
 .titlebox blockquote ul li:first-child, .titlebox blockquote ul:hover li {
   display: block;
 }
 
 /*turns top list item into section header*/
-/* line 65, ../sass/_sidebar.scss */
 .titlebox blockquote li:first-child {
   font-size: 1em;
   padding: 4px;
@@ -635,17 +552,14 @@ div.titlebox p.users-online span.number:after {
 /* announcements bar
 ------------------------------ */
 /* Better post submit boxes. Small change but makes the subreddit feel more finished. */
-/* line 77, ../sass/_sidebar.scss */
 .sidebox.submit {
   width: 300px;
 }
 
-/* line 80, ../sass/_sidebar.scss */
 .morelink {
   background-image: none;
 }
 
-/* line 83, ../sass/_sidebar.scss */
 .sidebox.submit .morelink {
   border: 0;
   border-radius: 5px;
@@ -653,43 +567,35 @@ div.titlebox p.users-online span.number:after {
   height: 36px;
 }
 
-/* line 89, ../sass/_sidebar.scss */
 .sidebox.submit .morelink:hover {
   background: none;
   border: none;
 }
 
-/* line 93, ../sass/_sidebar.scss */
 .sidebox.submit .morelink a {
   font-size: 0px;
 }
 
-/* line 96, ../sass/_sidebar.scss */
 .sidebox.submit .morelink .nub {
   display: none;
 }
 
-/* line 99, ../sass/_sidebar.scss */
 .sidebox.create {
   display: none;
 }
 
-/* line 102, ../sass/_sidebar.scss */
 .sidebox.submit.submit-link .morelink a {
   background: url(%%SubmitLink%%) no-repeat;
 }
 
-/* line 105, ../sass/_sidebar.scss */
 .sidebox.submit.submit-link .morelink a:hover {
   background: url(%%SubmitLinkRoll%%) no-repeat;
 }
 
-/* line 108, ../sass/_sidebar.scss */
 .sidebox.submit.submit-text .morelink a {
   background: url(%%SubmitText%%) no-repeat;
 }
 
-/* line 111, ../sass/_sidebar.scss */
 .sidebox.submit.submit-text .morelink a:hover {
   background: url(%%SubmitTextRoll%%) no-repeat;
 }
@@ -697,7 +603,6 @@ div.titlebox p.users-online span.number:after {
 /* ------------------------------ 
 	Thumbnails 
 ------------------------------ */
-/* line 4, ../sass/_thumbnails.scss */
 .thumbnail.default {
   background-image: url(%%nothumbnail%%) !important;
   background-repeat: no-repeat !important;
@@ -707,12 +612,10 @@ div.titlebox p.users-online span.number:after {
   padding: 62px 0 0 63px !important;
 }
 
-/* line 12, ../sass/_thumbnails.scss */
 a.thumbnail[href^='/r/pebble/'] {
   display: none;
 }
 
-/* line 15, ../sass/_thumbnails.scss */
 a.thumbnail[href^='http://redd.it'], a.thumbnail[href^='http://reddit.com'], a.thumbnail[href^='http://www.reddit.com'] {
   display: none;
 }
