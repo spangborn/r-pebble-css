@@ -34,8 +34,9 @@
     }
     #header {
         background: url(%%pebble-banner2x%%) white center center no-repeat;
-        background-size: $pebbleBannerWidth $pebbleBannerHeight !important;
-        height: $pebbleBannerHeight;
+        background-size: 1182px 100px !important;
+        background-position: center 12px;
+        height: 100px;
         position: relative;
     }
 }
