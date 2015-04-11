@@ -1,5 +1,5 @@
-/* ------------------------------ 
-	Replace 'readers' 
+/* ------------------------------
+	Replace 'readers'
 ------------------------------ */
 div.titlebox span.subscribers span.word {
 	display:none
@@ -68,32 +68,30 @@ div.titlebox p.users-online span.number:after {
 	cursor:default;
 	color: #555;
 }
-  
+
 /* announcements bar
 ------------------------------ */
 
 /* Better post submit boxes. Small change but makes the subreddit feel more finished. */
 
 .sidebox.submit {
-  width: 300px;
+width: 300px;
+}
+.morelink {
+background-image: none;
 }
 .sidebox.submit .morelink {
-  background: #FF4700;
   border: 0;
   border-radius: 5px;
-  padding: 2px 0px;
+  padding: 0px 0px;
+  height: 36px;
 }
 .sidebox.submit .morelink:hover {
-  background: #cc3900;
+background: none;
+border: none;
 }
 .sidebox.submit .morelink a {
-  color: #FFFFFF;
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  text-transform:uppercase;
-  letter-spacing: 0px;
-
+  font-size: 0px;
 }
 .sidebox.submit .morelink .nub {
   display: none;
@@ -101,5 +99,15 @@ div.titlebox p.users-online span.number:after {
 .sidebox.create {
   display: none;
 }
-
-
+.sidebox.submit.submit-link .morelink a {
+background: url(%%SubmitLink%%) no-repeat;
+}
+.sidebox.submit.submit-link .morelink a:hover {
+background: url(%%SubmitLinkRoll%%) no-repeat;
+}
+.sidebox.submit.submit-text .morelink a {
+background: url(%%SubmitText%%) no-repeat;
+}
+.sidebox.submit.submit-text .morelink a:hover {
+background: url(%%SubmitTextRoll%%) no-repeat;
+}
