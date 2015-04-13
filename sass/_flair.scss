@@ -1,24 +1,4 @@
 /* Flair */
-/* ------------------------------
-	Teampebble flair
------------------------------- */
-.flair-teampebble {
-  padding: 2px;
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-  width: 70px !important;
-  max-width: 70px !important;
-  background: url(%%TeamPebble%%) no-repeat center !important;
-  background-size: 100% !important;
-}
-.flair-teampebble:after {
-  left: 75px !important;
-}
-.flair-teampebble[title]:hover:before {
-  left: 69px !important;
-
-}
 
 /* Default Flair */
 .flair {
@@ -98,6 +78,29 @@ background-position-x: -23px !important;
 transition: none;
 }
 
+/* ------------------------------
+	Teampebble flair
+------------------------------ */
+.flair-teampebble {
+  padding: 2px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  width: 70px !important;
+  max-width: 70px !important;
+  background: url(%%TeamPebble%%) no-repeat center !important;
+  background-size: 100% !important;
+}
+.flair-teampebble:after {
+  left: 75px !important;
+}
+.flair-teampebble[title]:hover:before {
+  left: 69px !important;
+
+}
+.flair-teampebble:hover {
+  background-position-x: 0px !important;
+}
 
 /* Flair Selection */
 
