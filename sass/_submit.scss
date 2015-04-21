@@ -1,22 +1,44 @@
 /* Submit Page */
 
-/* push submission area down so that submission guidelines show up on top */
-.submit-page .formtabs-content .spacer:nth-child(2) {
-    padding-top: 338px;
+/* -- Submission warning --- */
+.submit.content .infobar {
+    background-color: white;
+    border: none;
 }
-
-/* Move submission guidelines to the top */
-.submit-page .formtabs-content .spacer:nth-child(6) {
-    position: absolute;
-    top: 227px;
+.submit.content .formtabs-content {
+    border: none;
 }
-
-/* Fix link/text description height */
-
-.submit-page .formtabs-content #link-desc {
-    padding-bottom: 21px;
+.submit-content .tabmenu.formtab li {
+    border-radius: 4px;
+    border: 1px solid #CCC;
+    padding: 5px;
 }
-
-.submit_text {
-    max-height: none;
+.submit-content .tabmenu.formtab li a {
+    border: none;
+}
+.submit.content .tabmenu:after {
+    display: block;
+    margin: 5px 0 -10px -5px;
+    width: 520px;
+    font-size: 1.5em;
+    line-height: 2em;
+    font-weight: bold;
+    color: #FF4500;
+    background-color: white;
+    text-decoration: underline;
+    content: "Please read the sidebar rules and tag your post!"
+}
+.submit.content #link-desc:after,
+.submit.content #text-desc:after {
+    display: block;
+    width: 490px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border: 2px solid #FF4500;
+    content: "Check the sidebar for our posting rules, and please tag your post!"
 }
