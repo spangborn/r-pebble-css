@@ -82,26 +82,33 @@ transition: none;
 	Teampebble flair
 ------------------------------ */
 .flair-teampebble {
-  padding: 2px;
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-  width: 70px !important;
-  max-width: 70px !important;
-  background: url(%%TeamPebble%%) no-repeat center !important;
-  background-size: 100% !important;
+    background: none repeat scroll 0% 0% blue;
+    font-size: 10px;
+    color: white !important;
+    text-indent: 0px;
+    background-color: blue !important;
+    line-height: auto;
+    background-image: none;
+    height: 16px !important;
+    width: auto !important;
+    padding: 2px 8px;
+    margin: 0px;
+    line-height: 13px;
+    max-width: 200px !important;
+    border-radius: 5px !important;
 }
+
 .flair-teampebble:after {
-  left: 75px !important;
+    display: none !important;
 }
+
 .flair-teampebble[title]:hover:before {
-  left: 69px !important;
-
+    display: none !important;
 }
+
 .flair-teampebble:hover {
-  background-position-x: 0px !important;
-}
 
+}
 /* Flair Selection */
 
 .flairoptionpane .flair {
