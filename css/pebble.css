@@ -2,7 +2,7 @@
 	Package:rPebble-CSS
 	Version: 0.0.2
 	Build: prod
-	Built: 2015-04-21 7:03:06 PM MDT 
+	Built: 2015-04-21 7:07:36 PM MDT 
 */
 
 /* Variables */
@@ -302,7 +302,7 @@
   width: auto !important;
   padding: 2px 8px;
   margin: 0px;
-  line-height: 13px;
+  line-height: 15px;
   max-width: 200px !important;
   border-radius: 5px !important;
 }
